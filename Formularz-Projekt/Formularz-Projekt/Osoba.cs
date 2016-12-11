@@ -14,7 +14,6 @@ namespace Formularz_Projekt
         protected string Email;
         protected string zawód;
         protected string typZawodu;
-        protected string chorobyAlerg;
         protected int wiek;
         protected double masaCiała;
         protected double wzrost;
