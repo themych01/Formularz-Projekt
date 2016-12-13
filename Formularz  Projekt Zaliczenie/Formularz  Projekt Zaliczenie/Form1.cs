@@ -31,7 +31,9 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void edytujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            Form2 d1 = new Form2();
+            d1.Show();
+            this.Hide();
 
         }
     }

@@ -45,5 +45,28 @@ namespace Formularz__Projekt_Zaliczenie
             Form1 d2 = new Form1();
             d2.Show();
         }
+
+        private void wybierzPlikToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+
+
+        }
+
+        private void wyczyśćToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Box1.Clear();
+            Box2.Clear();
+            Box3.Clear();
+            Box4.Clear();
+            Box5.Clear();
+            Box6.Clear();
+            Box7.ResetText();
+            Box8.Clear();
+            Box9.Clear();
+            Box10.Clear();
+            Box11.Clear();
+            Box12.ResetText();
+        }
     }
 }

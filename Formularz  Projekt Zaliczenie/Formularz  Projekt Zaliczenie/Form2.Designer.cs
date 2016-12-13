@@ -61,13 +61,19 @@
             this.Box12 = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.wyczyśćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wybierzPlikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wyczyśćToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plikToolStripMenuItem});
+            this.plikToolStripMenuItem,
+            this.wyczyśćToolStripMenuItem,
+            this.wyczyśćToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(650, 24);
@@ -344,6 +350,32 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // wyczyśćToolStripMenuItem
+            // 
+            this.wyczyśćToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wybierzPlikToolStripMenuItem});
+            this.wyczyśćToolStripMenuItem.Name = "wyczyśćToolStripMenuItem";
+            this.wyczyśćToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.wyczyśćToolStripMenuItem.Text = "Edytuj";
+            // 
+            // wybierzPlikToolStripMenuItem
+            // 
+            this.wybierzPlikToolStripMenuItem.Name = "wybierzPlikToolStripMenuItem";
+            this.wybierzPlikToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wybierzPlikToolStripMenuItem.Text = "Wybierz Plik";
+            this.wybierzPlikToolStripMenuItem.Click += new System.EventHandler(this.wybierzPlikToolStripMenuItem_Click);
+            // 
+            // wyczyśćToolStripMenuItem1
+            // 
+            this.wyczyśćToolStripMenuItem1.Name = "wyczyśćToolStripMenuItem1";
+            this.wyczyśćToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
+            this.wyczyśćToolStripMenuItem1.Text = "Wyczyść";
+            this.wyczyśćToolStripMenuItem1.Click += new System.EventHandler(this.wyczyśćToolStripMenuItem1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,7 +409,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
-            this.Text = "Nowa Osoba";
+            this.Text = "Osoba";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -419,5 +451,9 @@
         private System.Windows.Forms.ComboBox Box12;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wybierzPlikToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem1;
     }
 }
