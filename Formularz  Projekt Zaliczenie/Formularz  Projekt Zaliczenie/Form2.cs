@@ -28,7 +28,7 @@ namespace Formularz__Projekt_Zaliczenie
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string[] lines = { "Imię :"+Box1.Text, "Nazwisko :"+ Box2.Text,"Wiek :"+ Box3.Text,"Numer Telefonu :"+ Box4.Text,
-                "Adres E-mail" +Box5.Text,"Zawód"+ Box6.Text,"Charakter pracy :"+Box7.Text,"Masa Ciała :"+ Box8.Text,"Wzrost :"+ Box9.Text,"Obwód Bioder :"+ Box10.Text,"Obwód Talii :"+ Box11.Text,"Choroby Alergiczne :"+Box12.Text };
+                "Adres E-mail :" +Box5.Text,"Zawód :" + Box6.Text,"Charakter pracy :"+Box7.Text,"Masa Ciała :"+ Box8.Text,"Wzrost :"+ Box9.Text,"Obwód Bioder :"+ Box10.Text,"Obwód Talii :"+ Box11.Text,"Choroby Alergiczne :"+Box12.Text };
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -37,7 +37,8 @@ namespace Formularz__Projekt_Zaliczenie
         private void zapiszIWyjdźToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string[] lines = { "Imię :"+Box1.Text, "Nazwisko :"+ Box2.Text,"Wiek :"+ Box3.Text,"Numer Telefonu :"+ Box4.Text,
-                "Adres E-mail" +Box5.Text,"Zawód"+ Box6.Text,"Charakter pracy :"+Box7.Text,"Masa Ciała :"+ Box8.Text,"Wzrost :"+ Box9.Text,"Obwód Bioder :"+ Box10.Text,"Obwód Talii :"+ Box11.Text,"Choroby Alergiczne :"+Box12.Text };
+                "Adres E-mail :" + Box5.Text,"Zawód :"+ Box6.Text,"Charakter pracy :"+Box7.Text,"Masa Ciała :"+ Box8.Text,"Wzrost :"+ Box9.Text,
+                "Obwód Bioder :" + Box10.Text,"Obwód Talii :"+ Box11.Text,"Choroby Alergiczne :"+Box12.Text };
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -51,17 +52,17 @@ namespace Formularz__Projekt_Zaliczenie
             openFileDialog1.ShowDialog();
             string[] lines = File.ReadAllLines(openFileDialog1.FileName);
             Box1.Text = lines[0].Remove(0,6);
-            Box2.Text = lines[1];
-            Box3.Text = lines[2];
-            Box4.Text = lines[3];
-            Box5.Text = lines[4];
-            Box6.Text = lines[5];
-            Box7.Text = lines[6];
-            Box8.Text = lines[7];
-            Box9.Text = lines[8];
-            Box10.Text = lines[9];
-            Box11.Text = lines[10];
-            Box12.Text = lines[11];
+            Box2.Text = lines[1].Remove(0,10);
+            Box3.Text = lines[2].Remove(0,6);
+            Box4.Text = lines[3].Remove(0,16);
+            Box5.Text = lines[4].Remove(0,14);
+            Box6.Text = lines[5].Remove(0,7);
+            Box7.Text = lines[6].Remove(0,17);
+            Box8.Text = lines[7].Remove(0,12);
+            Box9.Text = lines[8].Remove(0,8);
+            Box10.Text = lines[9].Remove(0,14);
+            Box11.Text = lines[10].Remove(0,13);
+            Box12.Text = lines[11].Remove(0,20);
 
         }
 
