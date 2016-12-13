@@ -8,22 +8,34 @@ namespace ConsoleApplication1
 {
     class Program
     {
-        public delegate int Delegacja(int arg1, int arg2);
-        public static int Metoda1(int argument1 , int argument2)
+        public static void main()
         {
-            int wynik = argument1 + argument2;
-            return wynik;
-        }
-        public static void Metoda2(string napis)
+            try
+            {
+                Console.WriteLine(ObliczPierwiastek(16));
+                Console.WriteLine(ObliczPierwiastek(-16));
+            }
+            catch (ArithmeticException ae)
+            {
+                Console.WriteLine("Wystąpił wyjątek");
+            }
+            catch (InvalidCastException ice)
+            {
+                Console.WriteLine("To nie mogło wyjść");
+            }
+
+
+            public static double ObliczPierwiastek(double x)
         {
-            Console.WriteLine("Została wywołana metoda2");
-        }
-        static void Main(string[] args)
-        {
-            Delegacja del1 = Metoda1;
-            int wartosc = del1(4, 8);
-            Console.WriteLine(wartosc);
+            x = -1;
+            if (x < 0)
+            {
+                throw new ArithmeticException("Nie można pierwiastkować liczby ujemnej");
+
+            }
+            return Math.Sqrt(x);
             Console.ReadKey();
         }
+    }
     }
 }
