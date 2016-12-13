@@ -81,5 +81,12 @@ namespace Formularz__Projekt_Zaliczenie
             Box11.Clear();
             Box12.ResetText();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double BMI;
+            BMI = Convert.ToDouble(Box8.Text) / ((Convert.ToDouble(Box9.Text))*(Convert.ToDouble(Box9.Text))/10000);
+            button1.Text = Convert.ToString(BMI);
+        }
     }
 }

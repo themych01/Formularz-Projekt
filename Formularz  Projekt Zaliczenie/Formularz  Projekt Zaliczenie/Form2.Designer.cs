@@ -33,7 +33,11 @@
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zapiszToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zapiszIWyjdźToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.wyjdźToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wyczyśćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wybierzPlikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wyczyśćToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,11 +64,9 @@
             this.Box7 = new System.Windows.Forms.ComboBox();
             this.Box12 = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.wyczyśćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wybierzPlikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wyczyśćToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,12 +107,39 @@
             this.zapiszIWyjdźToolStripMenuItem.Text = "Zapisz i Wyjdź";
             this.zapiszIWyjdźToolStripMenuItem.Click += new System.EventHandler(this.zapiszIWyjdźToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(145, 6);
+            // 
             // wyjdźToolStripMenuItem
             // 
             this.wyjdźToolStripMenuItem.Name = "wyjdźToolStripMenuItem";
             this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.wyjdźToolStripMenuItem.Text = "Wyjdź";
             this.wyjdźToolStripMenuItem.Click += new System.EventHandler(this.wyjdźToolStripMenuItem_Click);
+            // 
+            // wyczyśćToolStripMenuItem
+            // 
+            this.wyczyśćToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wybierzPlikToolStripMenuItem});
+            this.wyczyśćToolStripMenuItem.Name = "wyczyśćToolStripMenuItem";
+            this.wyczyśćToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.wyczyśćToolStripMenuItem.Text = "Edytuj";
+            // 
+            // wybierzPlikToolStripMenuItem
+            // 
+            this.wybierzPlikToolStripMenuItem.Name = "wybierzPlikToolStripMenuItem";
+            this.wybierzPlikToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wybierzPlikToolStripMenuItem.Text = "Wybierz Plik";
+            this.wybierzPlikToolStripMenuItem.Click += new System.EventHandler(this.wybierzPlikToolStripMenuItem_Click);
+            // 
+            // wyczyśćToolStripMenuItem1
+            // 
+            this.wyczyśćToolStripMenuItem1.Name = "wyczyśćToolStripMenuItem1";
+            this.wyczyśćToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
+            this.wyczyśćToolStripMenuItem1.Text = "Wyczyść";
+            this.wyczyśćToolStripMenuItem1.Click += new System.EventHandler(this.wyczyśćToolStripMenuItem1_Click);
             // 
             // contextMenuStrip1
             // 
@@ -345,36 +374,31 @@
             this.Box12.Size = new System.Drawing.Size(100, 21);
             this.Box12.TabIndex = 25;
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // wyczyśćToolStripMenuItem
+            // button1
             // 
-            this.wyczyśćToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wybierzPlikToolStripMenuItem});
-            this.wyczyśćToolStripMenuItem.Name = "wyczyśćToolStripMenuItem";
-            this.wyczyśćToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.wyczyśćToolStripMenuItem.Text = "Edytuj";
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(439, 65);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 42);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "BMI";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // wybierzPlikToolStripMenuItem
+            // label13
             // 
-            this.wybierzPlikToolStripMenuItem.Name = "wybierzPlikToolStripMenuItem";
-            this.wybierzPlikToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.wybierzPlikToolStripMenuItem.Text = "Wybierz Plik";
-            this.wybierzPlikToolStripMenuItem.Click += new System.EventHandler(this.wybierzPlikToolStripMenuItem_Click);
-            // 
-            // wyczyśćToolStripMenuItem1
-            // 
-            this.wyczyśćToolStripMenuItem1.Name = "wyczyśćToolStripMenuItem1";
-            this.wyczyśćToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
-            this.wyczyśćToolStripMenuItem1.Text = "Wyczyść";
-            this.wyczyśćToolStripMenuItem1.Click += new System.EventHandler(this.wyczyśćToolStripMenuItem1_Click);
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(435, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(110, 24);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Oblicz BMI";
             // 
             // Form2
             // 
@@ -382,6 +406,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Formularz__Projekt_Zaliczenie.Properties.Resources.depositphotos_57047247_Bodybuilder_on_winner_podium_vector;
             this.ClientSize = new System.Drawing.Size(650, 475);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Box12);
             this.Controls.Add(this.Box7);
             this.Controls.Add(this.Box11);
@@ -455,5 +481,7 @@
         private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wybierzPlikToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label13;
     }
 }
