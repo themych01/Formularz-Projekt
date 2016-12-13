@@ -28,5 +28,11 @@ namespace Formularz__Projekt_Zaliczenie
         {
             Application.Exit();
         }
+
+        private void edytujToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+
+        }
     }
 }
