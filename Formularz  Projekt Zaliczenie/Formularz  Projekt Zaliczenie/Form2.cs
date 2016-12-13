@@ -49,7 +49,19 @@ namespace Formularz__Projekt_Zaliczenie
         private void wybierzPlikToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
-
+            string[] lines = File.ReadAllLines(openFileDialog1.FileName);
+            Box1.Text = lines[0].Remove(0,6);
+            Box2.Text = lines[1];
+            Box3.Text = lines[2];
+            Box4.Text = lines[3];
+            Box5.Text = lines[4];
+            Box6.Text = lines[5];
+            Box7.Text = lines[6];
+            Box8.Text = lines[7];
+            Box9.Text = lines[8];
+            Box10.Text = lines[9];
+            Box11.Text = lines[10];
+            Box12.Text = lines[11];
 
         }
 
