@@ -51,17 +51,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.Box1 = new System.Windows.Forms.TextBox();
-            this.Box2 = new System.Windows.Forms.TextBox();
-            this.Box3 = new System.Windows.Forms.TextBox();
-            this.Box4 = new System.Windows.Forms.TextBox();
-            this.Box5 = new System.Windows.Forms.TextBox();
-            this.Box6 = new System.Windows.Forms.TextBox();
-            this.Box8 = new System.Windows.Forms.TextBox();
-            this.Box9 = new System.Windows.Forms.TextBox();
-            this.Box10 = new System.Windows.Forms.TextBox();
-            this.Box11 = new System.Windows.Forms.TextBox();
-            this.Box7 = new System.Windows.Forms.ComboBox();
+            this.Imie = new System.Windows.Forms.TextBox();
+            this.Nazwisko = new System.Windows.Forms.TextBox();
+            this.Wiek = new System.Windows.Forms.TextBox();
+            this.NumerTelefonu = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.Zawód = new System.Windows.Forms.TextBox();
+            this.MasaCiała = new System.Windows.Forms.TextBox();
+            this.Wzrost = new System.Windows.Forms.TextBox();
+            this.ObwBioder = new System.Windows.Forms.TextBox();
+            this.ObwTalii = new System.Windows.Forms.TextBox();
+            this.TrybŻycia = new System.Windows.Forms.ComboBox();
             this.Box12 = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -282,91 +282,92 @@
             this.label12.TabIndex = 13;
             this.label12.Text = "Choroby Alergiczne";
             // 
-            // Box1
+            // Imie
             // 
-            this.Box1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Box1.Location = new System.Drawing.Point(219, 65);
-            this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(93, 20);
-            this.Box1.TabIndex = 14;
+            this.Imie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Imie.Location = new System.Drawing.Point(219, 65);
+            this.Imie.Name = "Imie";
+            this.Imie.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Imie.Size = new System.Drawing.Size(93, 20);
+            this.Imie.TabIndex = 14;
             // 
-            // Box2
+            // Nazwisko
             // 
-            this.Box2.Location = new System.Drawing.Point(219, 96);
-            this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(93, 20);
-            this.Box2.TabIndex = 15;
+            this.Nazwisko.Location = new System.Drawing.Point(219, 96);
+            this.Nazwisko.Name = "Nazwisko";
+            this.Nazwisko.Size = new System.Drawing.Size(93, 20);
+            this.Nazwisko.TabIndex = 15;
             // 
-            // Box3
+            // Wiek
             // 
-            this.Box3.Location = new System.Drawing.Point(219, 133);
-            this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(93, 20);
-            this.Box3.TabIndex = 16;
+            this.Wiek.Location = new System.Drawing.Point(219, 133);
+            this.Wiek.Name = "Wiek";
+            this.Wiek.Size = new System.Drawing.Size(93, 20);
+            this.Wiek.TabIndex = 16;
             // 
-            // Box4
+            // NumerTelefonu
             // 
-            this.Box4.Location = new System.Drawing.Point(219, 168);
-            this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(93, 20);
-            this.Box4.TabIndex = 17;
+            this.NumerTelefonu.Location = new System.Drawing.Point(219, 168);
+            this.NumerTelefonu.Name = "NumerTelefonu";
+            this.NumerTelefonu.Size = new System.Drawing.Size(93, 20);
+            this.NumerTelefonu.TabIndex = 17;
             // 
-            // Box5
+            // Email
             // 
-            this.Box5.Location = new System.Drawing.Point(219, 210);
-            this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(93, 20);
-            this.Box5.TabIndex = 18;
+            this.Email.Location = new System.Drawing.Point(219, 210);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(93, 20);
+            this.Email.TabIndex = 18;
             // 
-            // Box6
+            // Zawód
             // 
-            this.Box6.Location = new System.Drawing.Point(219, 249);
-            this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(93, 20);
-            this.Box6.TabIndex = 19;
+            this.Zawód.Location = new System.Drawing.Point(219, 249);
+            this.Zawód.Name = "Zawód";
+            this.Zawód.Size = new System.Drawing.Size(93, 20);
+            this.Zawód.TabIndex = 19;
             // 
-            // Box8
+            // MasaCiała
             // 
-            this.Box8.Location = new System.Drawing.Point(219, 308);
-            this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(93, 20);
-            this.Box8.TabIndex = 20;
+            this.MasaCiała.Location = new System.Drawing.Point(219, 308);
+            this.MasaCiała.Name = "MasaCiała";
+            this.MasaCiała.Size = new System.Drawing.Size(93, 20);
+            this.MasaCiała.TabIndex = 20;
             // 
-            // Box9
+            // Wzrost
             // 
-            this.Box9.Location = new System.Drawing.Point(219, 340);
-            this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(93, 20);
-            this.Box9.TabIndex = 21;
+            this.Wzrost.Location = new System.Drawing.Point(219, 340);
+            this.Wzrost.Name = "Wzrost";
+            this.Wzrost.Size = new System.Drawing.Size(93, 20);
+            this.Wzrost.TabIndex = 21;
             // 
-            // Box10
+            // ObwBioder
             // 
-            this.Box10.Location = new System.Drawing.Point(219, 371);
-            this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(93, 20);
-            this.Box10.TabIndex = 22;
+            this.ObwBioder.Location = new System.Drawing.Point(219, 371);
+            this.ObwBioder.Name = "ObwBioder";
+            this.ObwBioder.Size = new System.Drawing.Size(93, 20);
+            this.ObwBioder.TabIndex = 22;
             // 
-            // Box11
+            // ObwTalii
             // 
-            this.Box11.Location = new System.Drawing.Point(219, 401);
-            this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(93, 20);
-            this.Box11.TabIndex = 23;
+            this.ObwTalii.Location = new System.Drawing.Point(219, 401);
+            this.ObwTalii.Name = "ObwTalii";
+            this.ObwTalii.Size = new System.Drawing.Size(93, 20);
+            this.ObwTalii.TabIndex = 23;
             // 
-            // Box7
+            // TrybŻycia
             // 
-            this.Box7.FormattingEnabled = true;
-            this.Box7.Items.AddRange(new object[] {
+            this.TrybŻycia.FormattingEnabled = true;
+            this.TrybŻycia.Items.AddRange(new object[] {
             "1,0 ",
             "1,2",
             "1,4",
             "1,6",
             "1,8",
             "2,0"});
-            this.Box7.Location = new System.Drawing.Point(219, 281);
-            this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(93, 21);
-            this.Box7.TabIndex = 24;
+            this.TrybŻycia.Location = new System.Drawing.Point(219, 281);
+            this.TrybŻycia.Name = "TrybŻycia";
+            this.TrybŻycia.Size = new System.Drawing.Size(93, 21);
+            this.TrybŻycia.TabIndex = 24;
             // 
             // Box12
             // 
@@ -465,17 +466,17 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Box12);
-            this.Controls.Add(this.Box7);
-            this.Controls.Add(this.Box11);
-            this.Controls.Add(this.Box10);
-            this.Controls.Add(this.Box9);
-            this.Controls.Add(this.Box8);
-            this.Controls.Add(this.Box6);
-            this.Controls.Add(this.Box5);
-            this.Controls.Add(this.Box4);
-            this.Controls.Add(this.Box3);
-            this.Controls.Add(this.Box2);
-            this.Controls.Add(this.Box1);
+            this.Controls.Add(this.TrybŻycia);
+            this.Controls.Add(this.ObwTalii);
+            this.Controls.Add(this.ObwBioder);
+            this.Controls.Add(this.Wzrost);
+            this.Controls.Add(this.MasaCiała);
+            this.Controls.Add(this.Zawód);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.NumerTelefonu);
+            this.Controls.Add(this.Wiek);
+            this.Controls.Add(this.Nazwisko);
+            this.Controls.Add(this.Imie);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -519,17 +520,17 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox Box1;
-        private System.Windows.Forms.TextBox Box2;
-        private System.Windows.Forms.TextBox Box3;
-        private System.Windows.Forms.TextBox Box4;
-        private System.Windows.Forms.TextBox Box5;
-        private System.Windows.Forms.TextBox Box6;
-        private System.Windows.Forms.TextBox Box8;
-        private System.Windows.Forms.TextBox Box9;
-        private System.Windows.Forms.TextBox Box10;
-        private System.Windows.Forms.TextBox Box11;
-        private System.Windows.Forms.ComboBox Box7;
+        private System.Windows.Forms.TextBox Imie;
+        private System.Windows.Forms.TextBox Nazwisko;
+        private System.Windows.Forms.TextBox Wiek;
+        private System.Windows.Forms.TextBox NumerTelefonu;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.TextBox Zawód;
+        private System.Windows.Forms.TextBox MasaCiała;
+        private System.Windows.Forms.TextBox Wzrost;
+        private System.Windows.Forms.TextBox ObwBioder;
+        private System.Windows.Forms.TextBox ObwTalii;
+        private System.Windows.Forms.ComboBox TrybŻycia;
         private System.Windows.Forms.ComboBox Box12;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

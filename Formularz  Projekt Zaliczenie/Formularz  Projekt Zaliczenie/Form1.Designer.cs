@@ -63,7 +63,7 @@
             // nowyToolStripMenuItem
             // 
             this.nowyToolStripMenuItem.Name = "nowyToolStripMenuItem";
-            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.nowyToolStripMenuItem.Text = "Osoba";
             this.nowyToolStripMenuItem.Click += new System.EventHandler(this.nowyToolStripMenuItem_Click);
             // 
@@ -82,8 +82,8 @@
             // edytujToolStripMenuItem
             // 
             this.edytujToolStripMenuItem.Name = "edytujToolStripMenuItem";
-            this.edytujToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.edytujToolStripMenuItem.Text = "Edytuj";
+            this.edytujToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.edytujToolStripMenuItem.Text = "Wczytaj";
             this.edytujToolStripMenuItem.Click += new System.EventHandler(this.edytujToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
