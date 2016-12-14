@@ -62,12 +62,12 @@
             this.ObwBioder = new System.Windows.Forms.TextBox();
             this.ObwTalii = new System.Windows.Forms.TextBox();
             this.TrybŻycia = new System.Windows.Forms.ComboBox();
-            this.Box12 = new System.Windows.Forms.ComboBox();
+            this.Alerg = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BMI = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ZapoKal = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Płeć = new System.Windows.Forms.ComboBox();
@@ -369,35 +369,35 @@
             this.TrybŻycia.Size = new System.Drawing.Size(93, 21);
             this.TrybŻycia.TabIndex = 24;
             // 
-            // Box12
+            // Alerg
             // 
-            this.Box12.FormattingEnabled = true;
-            this.Box12.Items.AddRange(new object[] {
+            this.Alerg.FormattingEnabled = true;
+            this.Alerg.Items.AddRange(new object[] {
             "Brak",
             "Astma",
             "Pyłki",
             "Sierść/Kurz",
             "Leki/inne"});
-            this.Box12.Location = new System.Drawing.Point(219, 432);
-            this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(183, 21);
-            this.Box12.TabIndex = 25;
+            this.Alerg.Location = new System.Drawing.Point(219, 432);
+            this.Alerg.Name = "Alerg";
+            this.Alerg.Size = new System.Drawing.Size(183, 21);
+            this.Alerg.TabIndex = 25;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button1
+            // BMI
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(433, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 42);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "BMI";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BMI.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMI.Location = new System.Drawing.Point(433, 59);
+            this.BMI.Name = "BMI";
+            this.BMI.Size = new System.Drawing.Size(97, 42);
+            this.BMI.TabIndex = 26;
+            this.BMI.Text = "BMI";
+            this.BMI.UseVisualStyleBackColor = false;
+            this.BMI.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -409,17 +409,17 @@
             this.label13.TabIndex = 27;
             this.label13.Text = "Oblicz BMI";
             // 
-            // button2
+            // ZapoKal
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(602, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 42);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Click";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ZapoKal.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ZapoKal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZapoKal.Location = new System.Drawing.Point(602, 51);
+            this.ZapoKal.Name = "ZapoKal";
+            this.ZapoKal.Size = new System.Drawing.Size(97, 42);
+            this.ZapoKal.TabIndex = 28;
+            this.ZapoKal.Text = "Click";
+            this.ZapoKal.UseVisualStyleBackColor = false;
+            this.ZapoKal.Click += new System.EventHandler(this.button2_Click);
             // 
             // label14
             // 
@@ -462,10 +462,10 @@
             this.Controls.Add(this.Płeć);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ZapoKal);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Box12);
+            this.Controls.Add(this.BMI);
+            this.Controls.Add(this.Alerg);
             this.Controls.Add(this.TrybŻycia);
             this.Controls.Add(this.ObwTalii);
             this.Controls.Add(this.ObwBioder);
@@ -531,16 +531,16 @@
         private System.Windows.Forms.TextBox ObwBioder;
         private System.Windows.Forms.TextBox ObwTalii;
         private System.Windows.Forms.ComboBox TrybŻycia;
-        private System.Windows.Forms.ComboBox Box12;
+        private System.Windows.Forms.ComboBox Alerg;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wybierzPlikToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BMI;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ZapoKal;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox Płeć;

@@ -29,7 +29,7 @@ namespace Formularz__Projekt_Zaliczenie
             string[] lines = {"Imię :"+Imie.Text, "Nazwisko :"+ Nazwisko.Text,"Wiek :"+ Wiek.Text,"Numer Telefonu :"+ NumerTelefonu.Text,
                 "Adres E-mail :" +Email.Text,"Zawód :" + Zawód.Text,"Tryb życia :"+TrybŻycia.Text,"Masa Ciała :"+ MasaCiała.Text,
                 "Wzrost :" + Wzrost.Text,"Obwód Bioder :"+ ObwBioder.Text,"Obwód Talii :"+ ObwTalii.Text,
-                "Choroby Alergiczne :" +Box12.Text , "BMI :" + button1.Text,"Płeć :"+Płeć.Text};
+                "Choroby Alergiczne :" +Alerg.Text , "BMI :" + BMI.Text,"Płeć :"+Płeć.Text, "Zapotrzebowanie kaloryczne :" + ZapoKal.Text};
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -40,7 +40,7 @@ namespace Formularz__Projekt_Zaliczenie
             string[] lines = {"Imię :"+Imie.Text, "Nazwisko :"+ Nazwisko.Text,"Wiek :"+ Wiek.Text,"Numer Telefonu :"+ NumerTelefonu.Text,
                 "Adres E-mail :" + Email.Text,"Zawód :"+ Zawód.Text,"Tryb życia :"+TrybŻycia.Text,
                 "Masa Ciała :" + MasaCiała.Text,"Wzrost :"+ Wzrost.Text,"Obwód Bioder :" + ObwBioder.Text,"Obwód Talii :"+ ObwTalii.Text,
-                "Choroby Alergiczne :" +Box12.Text, "BMI :" + button1.Text,"Płeć :"+Płeć.Text };
+                "Choroby Alergiczne :" +Alerg.Text, "BMI :" + BMI.Text,"Płeć :"+Płeć.Text, "Zapotrzebowanie kaloryczne :" + ZapoKal.Text};
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -64,9 +64,10 @@ namespace Formularz__Projekt_Zaliczenie
             Wzrost.Text = lines[8].Remove(0,8);
             ObwBioder.Text = lines[9].Remove(0,14);
             ObwTalii.Text = lines[10].Remove(0,13);
-            Box12.Text = lines[11].Remove(0,20);
-            button1.Text = lines[12].Remove(0, 5);
+            Alerg.Text = lines[11].Remove(0,20);
+            BMI.Text = lines[12].Remove(0, 5);
             Płeć.Text = lines[13].Remove(0, 6);
+            ZapoKal.Text = lines[14].Remove(0, 28);
         }
 
         private void wyczyśćToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -82,16 +83,17 @@ namespace Formularz__Projekt_Zaliczenie
             Wzrost.Clear();
             ObwBioder.Clear();
             ObwTalii.Clear();
-            Box12.ResetText();
-            button1.ResetText();
+            Alerg.ResetText();
+            BMI.Text = "BMI";
             Płeć.ResetText();
+            ZapoKal.Text = "Click";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             double BMI;
             BMI = Convert.ToDouble(MasaCiała.Text) / ((Convert.ToDouble(Wzrost.Text))*(Convert.ToDouble(Wzrost.Text))/10000);
-            button1.Text = Convert.ToString(BMI);
+            this.BMI.Text = Convert.ToString(BMI);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -102,8 +104,7 @@ namespace Formularz__Projekt_Zaliczenie
             B = Convert.ToDouble(TrybŻycia.Text);
             double C;
             C = A * B;
-            button2.Text = Convert.ToString(C) + "kcal";
-            
+            ZapoKal.Text = Convert.ToString(C) + "kcal";
 
         }
 
