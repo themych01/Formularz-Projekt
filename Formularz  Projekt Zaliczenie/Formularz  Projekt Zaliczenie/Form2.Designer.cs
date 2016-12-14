@@ -67,6 +67,14 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Płeć = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Somatotyp = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Cel = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +86,7 @@
             this.wyczyśćToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(650, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,8 +132,8 @@
             this.wyczyśćToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.wybierzPlikToolStripMenuItem});
             this.wyczyśćToolStripMenuItem.Name = "wyczyśćToolStripMenuItem";
-            this.wyczyśćToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.wyczyśćToolStripMenuItem.Text = "Edytuj";
+            this.wyczyśćToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.wyczyśćToolStripMenuItem.Text = "Wczytaj";
             // 
             // wybierzPlikToolStripMenuItem
             // 
@@ -219,9 +227,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(12, 282);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 17);
+            this.label7.Size = new System.Drawing.Size(73, 17);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Charakter Pracy";
+            this.label7.Text = "Tryb życia";
             // 
             // label8
             // 
@@ -283,82 +291,85 @@
             this.Box1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Box1.Location = new System.Drawing.Point(219, 65);
             this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(100, 20);
+            this.Box1.Size = new System.Drawing.Size(93, 20);
             this.Box1.TabIndex = 14;
             // 
             // Box2
             // 
             this.Box2.Location = new System.Drawing.Point(219, 96);
             this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(100, 20);
+            this.Box2.Size = new System.Drawing.Size(93, 20);
             this.Box2.TabIndex = 15;
             // 
             // Box3
             // 
             this.Box3.Location = new System.Drawing.Point(219, 133);
             this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(100, 20);
+            this.Box3.Size = new System.Drawing.Size(93, 20);
             this.Box3.TabIndex = 16;
             // 
             // Box4
             // 
             this.Box4.Location = new System.Drawing.Point(219, 168);
             this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(100, 20);
+            this.Box4.Size = new System.Drawing.Size(93, 20);
             this.Box4.TabIndex = 17;
             // 
             // Box5
             // 
             this.Box5.Location = new System.Drawing.Point(219, 210);
             this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(100, 20);
+            this.Box5.Size = new System.Drawing.Size(93, 20);
             this.Box5.TabIndex = 18;
             // 
             // Box6
             // 
             this.Box6.Location = new System.Drawing.Point(219, 249);
             this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(100, 20);
+            this.Box6.Size = new System.Drawing.Size(93, 20);
             this.Box6.TabIndex = 19;
             // 
             // Box8
             // 
             this.Box8.Location = new System.Drawing.Point(219, 308);
             this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(100, 20);
+            this.Box8.Size = new System.Drawing.Size(93, 20);
             this.Box8.TabIndex = 20;
             // 
             // Box9
             // 
             this.Box9.Location = new System.Drawing.Point(219, 340);
             this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(100, 20);
+            this.Box9.Size = new System.Drawing.Size(93, 20);
             this.Box9.TabIndex = 21;
             // 
             // Box10
             // 
             this.Box10.Location = new System.Drawing.Point(219, 371);
             this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(100, 20);
+            this.Box10.Size = new System.Drawing.Size(93, 20);
             this.Box10.TabIndex = 22;
             // 
             // Box11
             // 
             this.Box11.Location = new System.Drawing.Point(219, 401);
             this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(100, 20);
+            this.Box11.Size = new System.Drawing.Size(93, 20);
             this.Box11.TabIndex = 23;
             // 
             // Box7
             // 
             this.Box7.FormattingEnabled = true;
             this.Box7.Items.AddRange(new object[] {
-            "Siedzący",
-            "Umiarkowany ruch",
-            "Dużo ruchu"});
+            "1,0 - Leżący lub siedzący tryb życia, brak aktywności fizycznej",
+            "1,2 - Praca siedząca, aktywność fizyczna na niskim poziomie",
+            "1,4 - Praca nie fizyczna, trening 2 razy w tygodniu",
+            "1,6 - Lekka praca fizyczna, trening 3-4 razyw  tygodniu",
+            "1,8 - Praca fizyczna, trening 5 razy w tygodniu",
+            "2,0 - Ciężka praca fizyczna, codzienny trening"});
             this.Box7.Location = new System.Drawing.Point(219, 281);
             this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(100, 21);
+            this.Box7.Size = new System.Drawing.Size(202, 21);
             this.Box7.TabIndex = 24;
             // 
             // Box12
@@ -371,7 +382,7 @@
             "Leki/inne"});
             this.Box12.Location = new System.Drawing.Point(219, 432);
             this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(100, 21);
+            this.Box12.Size = new System.Drawing.Size(183, 21);
             this.Box12.TabIndex = 25;
             // 
             // openFileDialog1
@@ -382,7 +393,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(439, 65);
+            this.button1.Location = new System.Drawing.Point(433, 59);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 42);
             this.button1.TabIndex = 26;
@@ -393,19 +404,115 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(435, 24);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(441, 24);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(110, 24);
+            this.label13.Size = new System.Drawing.Size(76, 15);
             this.label13.TabIndex = 27;
             this.label13.Text = "Oblicz BMI";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(647, 63);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 42);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Click";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Location = new System.Drawing.Point(604, 36);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(191, 15);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Zapotrzebowanie Kaloryczne";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(12, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(35, 17);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Płeć";
+            // 
+            // Płeć
+            // 
+            this.Płeć.FormattingEnabled = true;
+            this.Płeć.Items.AddRange(new object[] {
+            "Kobieta",
+            "Mężczyzna"});
+            this.Płeć.Location = new System.Drawing.Point(219, 30);
+            this.Płeć.Name = "Płeć";
+            this.Płeć.Size = new System.Drawing.Size(93, 21);
+            this.Płeć.TabIndex = 31;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(644, 285);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(75, 17);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "Somatotyp";
+            // 
+            // Somatotyp
+            // 
+            this.Somatotyp.FormattingEnabled = true;
+            this.Somatotyp.Items.AddRange(new object[] {
+            "Ekomorfik",
+            "Endomorfik",
+            "Mezomorfik"});
+            this.Somatotyp.Location = new System.Drawing.Point(622, 328);
+            this.Somatotyp.Name = "Somatotyp";
+            this.Somatotyp.Size = new System.Drawing.Size(121, 21);
+            this.Somatotyp.TabIndex = 33;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(660, 374);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(37, 17);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "CEL!";
+            // 
+            // Cel
+            // 
+            this.Cel.FormattingEnabled = true;
+            this.Cel.Items.AddRange(new object[] {
+            "Budowanie Masy Mięśniowej",
+            "Redukcja Tkanki Tłuszczowej"});
+            this.Cel.Location = new System.Drawing.Point(592, 408);
+            this.Cel.Name = "Cel";
+            this.Cel.Size = new System.Drawing.Size(193, 21);
+            this.Cel.TabIndex = 35;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Formularz__Projekt_Zaliczenie.Properties.Resources.depositphotos_57047247_Bodybuilder_on_winner_podium_vector;
-            this.ClientSize = new System.Drawing.Size(650, 475);
+            this.ClientSize = new System.Drawing.Size(819, 475);
+            this.Controls.Add(this.Cel);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.Somatotyp);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.Płeć);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Box12);
@@ -483,5 +590,13 @@
         private System.Windows.Forms.ToolStripMenuItem wyczyśćToolStripMenuItem1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox Płeć;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox Somatotyp;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox Cel;
     }
 }
