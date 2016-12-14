@@ -71,10 +71,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Płeć = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.Somatotyp = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.Cel = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +82,7 @@
             this.wyczyśćToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(786, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -415,18 +411,19 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(647, 63);
+            this.button2.Location = new System.Drawing.Point(602, 51);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 42);
             this.button2.TabIndex = 28;
             this.button2.Text = "Click";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(604, 36);
+            this.label14.Location = new System.Drawing.Point(559, 24);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(191, 15);
             this.label14.TabIndex = 29;
@@ -454,61 +451,12 @@
             this.Płeć.Size = new System.Drawing.Size(93, 21);
             this.Płeć.TabIndex = 31;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(644, 285);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 17);
-            this.label16.TabIndex = 32;
-            this.label16.Text = "Somatotyp";
-            // 
-            // Somatotyp
-            // 
-            this.Somatotyp.FormattingEnabled = true;
-            this.Somatotyp.Items.AddRange(new object[] {
-            "Ekomorfik",
-            "Endomorfik",
-            "Mezomorfik"});
-            this.Somatotyp.Location = new System.Drawing.Point(622, 328);
-            this.Somatotyp.Name = "Somatotyp";
-            this.Somatotyp.Size = new System.Drawing.Size(121, 21);
-            this.Somatotyp.TabIndex = 33;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(660, 374);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(37, 17);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "CEL!";
-            // 
-            // Cel
-            // 
-            this.Cel.FormattingEnabled = true;
-            this.Cel.Items.AddRange(new object[] {
-            "Budowanie Masy Mięśniowej",
-            "Redukcja Tkanki Tłuszczowej"});
-            this.Cel.Location = new System.Drawing.Point(592, 408);
-            this.Cel.Name = "Cel";
-            this.Cel.Size = new System.Drawing.Size(193, 21);
-            this.Cel.TabIndex = 35;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Formularz__Projekt_Zaliczenie.Properties.Resources.depositphotos_57047247_Bodybuilder_on_winner_podium_vector;
-            this.ClientSize = new System.Drawing.Size(819, 475);
-            this.Controls.Add(this.Cel);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.Somatotyp);
-            this.Controls.Add(this.label16);
+            this.ClientSize = new System.Drawing.Size(786, 475);
             this.Controls.Add(this.Płeć);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -594,9 +542,5 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox Płeć;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox Somatotyp;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox Cel;
     }
 }

@@ -27,10 +27,9 @@ namespace Formularz__Projekt_Zaliczenie
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string[] lines = {"Imię :"+Box1.Text, "Nazwisko :"+ Box2.Text,"Wiek :"+ Box3.Text,"Numer Telefonu :"+ Box4.Text,
-                "Adres E-mail :" +Box5.Text,"Zawód :" + Box6.Text,"Charakter pracy :"+Box7.Text,"Masa Ciała :"+ Box8.Text,
+                "Adres E-mail :" +Box5.Text,"Zawód :" + Box6.Text,"Tryb życia :"+Box7.Text,"Masa Ciała :"+ Box8.Text,
                 "Wzrost :" + Box9.Text,"Obwód Bioder :"+ Box10.Text,"Obwód Talii :"+ Box11.Text,
-                "Choroby Alergiczne :" +Box12.Text , "BMI :" + button1.Text,"Płeć :"+Płeć.Text,
-                "Somatotyp :" + Somatotyp.Text, "Cel :" + Cel.Text };
+                "Choroby Alergiczne :" +Box12.Text , "BMI :" + button1.Text,"Płeć :"+Płeć.Text};
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -39,10 +38,9 @@ namespace Formularz__Projekt_Zaliczenie
         private void zapiszIWyjdźToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string[] lines = {"Imię :"+Box1.Text, "Nazwisko :"+ Box2.Text,"Wiek :"+ Box3.Text,"Numer Telefonu :"+ Box4.Text,
-                "Adres E-mail :" + Box5.Text,"Zawód :"+ Box6.Text,"Charakter pracy :"+Box7.Text,
+                "Adres E-mail :" + Box5.Text,"Zawód :"+ Box6.Text,"Tryb życia :"+Box7.Text,
                 "Masa Ciała :" + Box8.Text,"Wzrost :"+ Box9.Text,"Obwód Bioder :" + Box10.Text,"Obwód Talii :"+ Box11.Text,
-                "Choroby Alergiczne :" +Box12.Text, "BMI :" + button1.Text,"Płeć :"+Płeć.Text,
-                "Somatotyp :" + Somatotyp.Text, "Cel :" + Cel.Text};
+                "Choroby Alergiczne :" +Box12.Text, "BMI :" + button1.Text,"Płeć :"+Płeć.Text };
             saveFileDialog1.ShowDialog();
             string filename = saveFileDialog1.FileName + ".txt";
             File.WriteAllLines(filename, lines);
@@ -61,7 +59,7 @@ namespace Formularz__Projekt_Zaliczenie
             Box4.Text = lines[3].Remove(0,16);
             Box5.Text = lines[4].Remove(0,14);
             Box6.Text = lines[5].Remove(0,7);
-            Box7.Text = lines[6].Remove(0,17);
+            Box7.Text = lines[6].Remove(0,12);
             Box8.Text = lines[7].Remove(0,12);
             Box9.Text = lines[8].Remove(0,8);
             Box10.Text = lines[9].Remove(0,14);
@@ -69,8 +67,6 @@ namespace Formularz__Projekt_Zaliczenie
             Box12.Text = lines[11].Remove(0,20);
             button1.Text = lines[12].Remove(0, 5);
             Płeć.Text = lines[13].Remove(0, 6);
-            Somatotyp.Text = lines[14].Remove(0, 11);
-            Cel.Text = lines[15].Remove(0, 5);
         }
 
         private void wyczyśćToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -89,8 +85,6 @@ namespace Formularz__Projekt_Zaliczenie
             Box12.ResetText();
             button1.ResetText();
             Płeć.ResetText();
-            Somatotyp.ResetText();
-            Cel.ResetText();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,5 +94,21 @@ namespace Formularz__Projekt_Zaliczenie
             button1.Text = Convert.ToString(BMI);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double A;
+            A = 66.5 + (13.7 * Convert.ToDouble(Box8.Text) + (5 * Convert.ToDouble(Box9.Text)) - (6.8 * Convert.ToDouble(Box3.Text)));
+            double B;
+            B = Convert.ToDouble(Box7.Text.Remove(2, 2);
+            double C;
+            C = A * B;
+            button2.Text = Convert.ToString(C);
+
+
+
+
+
+
+        }
     }
 }
