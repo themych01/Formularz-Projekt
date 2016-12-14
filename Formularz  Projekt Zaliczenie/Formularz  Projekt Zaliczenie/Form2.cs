@@ -99,16 +99,13 @@ namespace Formularz__Projekt_Zaliczenie
             double A;
             A = 66.5 + (13.7 * Convert.ToDouble(Box8.Text) + (5 * Convert.ToDouble(Box9.Text)) - (6.8 * Convert.ToDouble(Box3.Text)));
             double B;
-            B = Convert.ToDouble(Box7.Text.Remove(2, 2);
+            B = Convert.ToDouble(Box7.Text);
             double C;
             C = A * B;
-            button2.Text = Convert.ToString(C);
-
-
-
-
-
+            button2.Text = Convert.ToString(C) + "kcal";
+            
 
         }
+
     }
 }

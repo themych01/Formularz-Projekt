@@ -134,7 +134,7 @@
             // wybierzPlikToolStripMenuItem
             // 
             this.wybierzPlikToolStripMenuItem.Name = "wybierzPlikToolStripMenuItem";
-            this.wybierzPlikToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wybierzPlikToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.wybierzPlikToolStripMenuItem.Text = "Wybierz Plik";
             this.wybierzPlikToolStripMenuItem.Click += new System.EventHandler(this.wybierzPlikToolStripMenuItem_Click);
             // 
@@ -223,9 +223,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(12, 282);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 17);
+            this.label7.Size = new System.Drawing.Size(169, 17);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Tryb życia";
+            this.label7.Text = "Tryb życia(Współczynnik)";
             // 
             // label8
             // 
@@ -357,21 +357,22 @@
             // 
             this.Box7.FormattingEnabled = true;
             this.Box7.Items.AddRange(new object[] {
-            "1,0 - Leżący lub siedzący tryb życia, brak aktywności fizycznej",
-            "1,2 - Praca siedząca, aktywność fizyczna na niskim poziomie",
-            "1,4 - Praca nie fizyczna, trening 2 razy w tygodniu",
-            "1,6 - Lekka praca fizyczna, trening 3-4 razyw  tygodniu",
-            "1,8 - Praca fizyczna, trening 5 razy w tygodniu",
-            "2,0 - Ciężka praca fizyczna, codzienny trening"});
+            "1,0 ",
+            "1,2",
+            "1,4",
+            "1,6",
+            "1,8",
+            "2,0"});
             this.Box7.Location = new System.Drawing.Point(219, 281);
             this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(202, 21);
+            this.Box7.Size = new System.Drawing.Size(93, 21);
             this.Box7.TabIndex = 24;
             // 
             // Box12
             // 
             this.Box12.FormattingEnabled = true;
             this.Box12.Items.AddRange(new object[] {
+            "Brak",
             "Astma",
             "Pyłki",
             "Sierść/Kurz",
