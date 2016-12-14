@@ -19,6 +19,7 @@ namespace Formularz__Projekt_Zaliczenie
         }
         private void wyjdźToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Powrót do okna startowego
             this.Hide();
             Form1 d2 = new Form1();
             d2.Show();
@@ -26,6 +27,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Zapisywanie danych osoby do pliku tekstowego
             string[] lines = {"Imię :"+Imie.Text, "Nazwisko :"+ Nazwisko.Text,"Wiek :"+ Wiek.Text,"Numer Telefonu :"+ NumerTelefonu.Text,
                 "Adres E-mail :" +Email.Text,"Zawód :" + Zawód.Text,"Tryb życia :"+TrybŻycia.Text,"Masa Ciała :"+ MasaCiała.Text,
                 "Wzrost :" + Wzrost.Text,"Obwód Bioder :"+ ObwBioder.Text,"Obwód Talii :"+ ObwTalii.Text,
@@ -37,6 +39,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void zapiszIWyjdźToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Zapisywanie danych do Pliku tekstowego wraz z Wyjściem z okna Osoby
             string[] lines = {"Imię :"+Imie.Text, "Nazwisko :"+ Nazwisko.Text,"Wiek :"+ Wiek.Text,"Numer Telefonu :"+ NumerTelefonu.Text,
                 "Adres E-mail :" + Email.Text,"Zawód :"+ Zawód.Text,"Tryb życia :"+TrybŻycia.Text,
                 "Masa Ciała :" + MasaCiała.Text,"Wzrost :"+ Wzrost.Text,"Obwód Bioder :" + ObwBioder.Text,"Obwód Talii :"+ ObwTalii.Text,
@@ -51,6 +54,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void wybierzPlikToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Otwieranie pliku tekstowego i zczytywanie z niego danych
             openFileDialog1.ShowDialog();
             string[] lines = File.ReadAllLines(openFileDialog1.FileName);
             Imie.Text = lines[0].Remove(0,6);
@@ -72,6 +76,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void wyczyśćToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            //Czyszczenie Boxów
             Imie.Clear();
             Nazwisko.Clear();
             Wiek.Clear();
@@ -91,6 +96,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Liczenie BMI
             double BMI;
             BMI = Convert.ToDouble(MasaCiała.Text) / ((Convert.ToDouble(Wzrost.Text))*(Convert.ToDouble(Wzrost.Text))/10000);
             this.BMI.Text = Convert.ToString(BMI);
@@ -98,6 +104,7 @@ namespace Formularz__Projekt_Zaliczenie
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Liczenie zapotrzebowania Kalorycznego
             double A;
             A = 66.5 + (13.7 * Convert.ToDouble(MasaCiała.Text) + (5 * Convert.ToDouble(Wzrost.Text)) - (6.8 * Convert.ToDouble(Wiek.Text)));
             double B;
