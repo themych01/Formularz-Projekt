@@ -108,9 +108,5 @@ namespace Formularz__Projekt_Zaliczenie
 
         }
 
-        private void Box12_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

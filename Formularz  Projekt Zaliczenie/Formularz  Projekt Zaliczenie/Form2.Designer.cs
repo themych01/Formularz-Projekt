@@ -413,7 +413,7 @@
             // 
             this.ZapoKal.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ZapoKal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ZapoKal.Location = new System.Drawing.Point(602, 51);
+            this.ZapoKal.Location = new System.Drawing.Point(602, 59);
             this.ZapoKal.Name = "ZapoKal";
             this.ZapoKal.Size = new System.Drawing.Size(97, 42);
             this.ZapoKal.TabIndex = 28;
